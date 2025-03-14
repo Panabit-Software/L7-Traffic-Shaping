@@ -154,4 +154,7 @@
 <a id="联系我们"></a>
 🔗 访问官网：[www.panabit.com](https://www.panabit.com/)  
 🔗 访问论坛：[bbs.panabit.com](https://bbs.panabit.com/)  
+
+📧 技术支持邮箱：support@panabit.com
+
 📞 联系我们，获取更详细的解决方案！
