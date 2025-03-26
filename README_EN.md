@@ -116,15 +116,15 @@ The **Panabit Gateway** was deployed transparently between the **core switch & o
 <a id="basic-configuration"></a>
 
 ### **🔹 Traffic Splitting Strategy**  
-📌 **Path**: `【Network Settings】->【Routing/NAT】`  
+📌 **Path**: `【Network 】->【Routing/NAT】`   
 📌 **Steps**:
 1. Add a new policy and assign a priority
-2. Select the traffic type (e.g., **Online Gaming**)
+2. Select the traffic type (e.g., **Game**)
 3. Choose the NAT link
 4. Click **Confirm** to deploy
 
 📌 **Example Screenshot**:  
-![NAT Configuration](assets/nat_config.png)
+![NAT Configuration](assets/nat_config_EN.png)
 
 ---
 
@@ -132,20 +132,21 @@ The **Panabit Gateway** was deployed transparently between the **core switch & o
 <a id="custom-protocol"></a>
 
 📌 **Path**:  
-- `【Application Recognition】 -> 【Custom Protocol Name】 -> 【Domain Association】`
+- `【DPI】 -> 【Custom App】 -> 【App URL】`
 - Add **domain & port**, assign protocol category
 
 📌 **Step 1**:  
-![Custom Protocol](assets/custom_protocol_step1.png)  
-![Domain Association](assets/custom_protocol_step2.png)
+![Custom Protocol](assets/custom_protocol_step1_EN.png)  
+![Domain Association](assets/custom_protocol_step2_EN.png)
 
 📌 **Step 2**:  
-- Navigate to `【Network Settings】 -> 【Routing/NAT】`
+- **Path**:  
+-  `【Network 】 -> 【Routing/NAT】`
 - Select **Custom Protocol**, assign NAT **priority link**
 - **Click Confirm** to deploy
 
 📌 **Example Screenshot**:  
-![NAT Configuration](assets/custom_protocol_step3.png)
+![NAT Configuration](assets/custom_protocol_step3_EN.png)
 
 ---
 
