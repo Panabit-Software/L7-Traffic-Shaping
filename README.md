@@ -2,159 +2,160 @@
 <h1 align="center">
   <img src="assets/Panabit.png" alt="Panabit" width="240" height="72">
   <br>
-  Panabit 智能应用网关
+  Panabit Intelligent Application Gateway
 </h1>
-<h4 align="center">出口一体化智能应用网关</h4>
+<h4 align="center">Integrated Intelligent Application Gateway</h4>
 
 <p align="center">
-  <a href="README_EN.md" style="color: #007bff; text-decoration: none; font-weight: bold;">English</a> | <span style="color: #007bff; font-weight: bold;">中文</span>
+  <a href="README.md" style="color: #007bff; text-decoration: none; font-weight: bold;">中文</a> | <span style="color: #007bff; font-weight: bold;">English</span>
 </p>
 
 ---
 
-# 📌 目录
-1. [🌐 背景](#背景)
-2. [🔥 传统流量分流面临的挑战](#传统流量分流面临的挑战)
-3. [🚀 新型流量分流：灵活、智能、高效](#新型流量分流灵活智能高效)
-4. [📌 典型案例](#典型案例)
-   - [网络业务分流案例](#网络业务分流案例)
-5. [⚙️ 基本配置](#基本配置)
-   - [NAT 分流策略](#nat-分流策略)
-   - [自定义协议](#自定义协议)
-6. [📞 联系我们](#联系我们)
+# 📌 Table of Contents
+1. [🌐 Background](#background)
+2. [🔥 Challenges of Traditional Traffic Splitting](#challenges-of-traditional-traffic-splitting)
+3. [🚀 New Traffic Splitting: Flexible, Intelligent, Efficient](#new-traffic-splitting-flexible-intelligent-efficient)
+4. [📌 Typical Case Studies](#typical-case-studies)
+   - [Network Traffic Splitting Case](#network-traffic-splitting-case)
+5. [⚙️ Basic Configuration](#basic-configuration)
+   - [NAT Traffic Splitting Strategy](#nat-traffic-splitting-strategy)
+   - [Custom Protocol](#custom-protocol)
+6. [📞 Contact Us](#contact-us)
 
 ---
 
-# 🌐 **背景**  
-<a id="背景"></a>
-在传统网络架构中，流量分流通常依赖静态规则（Static Rules），例如基于 **IP 地址**、**端口号**、**协议类型** 等预定义策略进行流量调度。虽然这种方式在固定环境下能够有效工作，但随着业务需求的不断变化和网络环境的日益复杂，**静态规则的灵活性和适应性不足**，导致诸多问题。
+# 🌐 **Background**  
+<a id="background"></a>
+In traditional network architecture, traffic splitting typically relies on **static rules**, such as predefined policies based on **IP addresses, port numbers, and protocol types**. While effective in fixed environments, these static rules lack flexibility and adaptability, leading to various issues as business needs evolve and network environments become more complex.
 
 ---
 
-## 🔥 **传统流量分流面临的挑战**  
-<a id="传统流量分流面临的挑战"></a>
+## 🔥 **Challenges of Traditional Traffic Splitting**  
+<a id="challenges-of-traditional-traffic-splitting"></a>
 
-### 🔹 **缺乏灵活性，难以适应动态业务需求**  
-- 依赖固定规则（IP、端口、协议），无法应对 **IP 变更、业务扩展、突发流量** 等情况。  
-- 规则更新需手动维护，**运维成本高**，难以做到实时调整。
+### 🔹 **Lack of Flexibility for Dynamic Business Needs**  
+- Relies on fixed rules (IP, port, protocol) and cannot adapt to **IP changes, business expansion, or traffic surges**.  
+- Manual rule updates lead to **high operational costs** and make real-time adjustments difficult.
 
-### 🔹 **难以精准识别流量，缺乏智能调度能力**  
-- 无法识别 **加密流量、动态端口或应用层协议**，导致分流策略失效。  
-- 无法基于实时网络状态（**带宽、时延、负载**）进行动态调整，影响**流量优化**和**QoS 保障**。
+### 🔹 **Limited Traffic Identification and Lack of Intelligent Scheduling**  
+- Cannot recognize **encrypted traffic, dynamic ports, or application-layer protocols**, causing rule failures.  
+- Lacks real-time traffic optimization based on **bandwidth, latency, and load**, impacting **QoS assurance**.
 
 ---
 
-## 🚀 **新型流量分流：灵活、智能、高效**  
-<a id="新型流量分流灵活智能高效"></a>
+## 🚀 **New Traffic Splitting: Flexible, Intelligent, Efficient**  
+<a id="new-traffic-splitting-flexible-intelligent-efficient"></a>
 
-新型流量分流方式基于 **应用类型**进行智能调度，将 **不重要的娱乐应用** 无感知地分流到普通线路上，同时提供更大的可操作空间，以解决传统方式的局限性。
+New traffic splitting methods use **application-based intelligent scheduling**, redirecting **non-essential entertainment applications** to standard network links without user perception, offering a more flexible approach than traditional methods.
 
-### 🎯 **多样化的分流方式**  
-支持多种匹配方式：  
-- **五元组**（源 IP、目标 IP、源端口、目标端口、协议）  
-- **应用协议**（如 HTTP、HTTPS、DNS）  
-- **域名匹配**（如 `*.tiktok.com`、`*.netflix.com`）  
-- **VLAN**、**网络接口**、**用户类型**等
+### 🎯 **Diverse Traffic Splitting Methods**  
+Supports multiple matching approaches:  
+- **Five-tuple** (Source IP, Destination IP, Source Port, Destination Port, Protocol)  
+- **Application Protocols** (e.g., HTTP, HTTPS, DNS)  
+- **Domain Matching** (e.g., `*.tiktok.com`, `*.netflix.com`)  
+- **VLAN, Network Interfaces, User Types**, etc.
 
-### 🎯 **精准的应用识别**  
-- 识别率高达 **95%+**，能够识别并控制 **14 大类、上千种应用**，确保流量精准分流。
+### 🎯 **Accurate Application Identification**  
+- Achieves **95%+ recognition accuracy**, identifying and managing **14 major categories and thousands of applications** for precise traffic splitting.
 
-### 🎯 **多样的链路接入方式**  
-支持超过 **2000+ 条线路接入**，包括：
+### 🎯 **Diverse Link Access Methods**  
+Supports over **2000+ link types**, including:
 - **DHCP**
-- **静态 IP**
-- **PPPOE 拨号**
+- **Static IP**
+- **PPPoE Dial-Up**
 - **L2TP**
 
-### 🎯 **高性能的转发能力**  
-支持最高：
-- **100G 吞吐**
-- **1800 万并发连接**
-- **全场景接入**，保障流量分流高效顺畅。
+### 🎯 **High-Performance Forwarding Capabilities**  
+Supports up to:
+- **100G throughput**
+- **18 million concurrent connections**
+- **Full-scale access**, ensuring efficient traffic splitting.
 
 ---
 
-## 📌 **典型案例**  
-<a id="典型案例"></a>
+## 📌 **Typical Case Studies**  
+<a id="typical-case-studies"></a>
 
-### **📌 网络业务分流案例**  
-<a id="网络业务分流案例"></a>
+### **📌 Network Traffic Splitting Case**  
+<a id="network-traffic-splitting-case"></a>
 
-#### **项目背景**  
-某企业主要业务为**政企专线接入**，随着业务增长，**专线资源紧张**，高峰时段**网络不稳定**。  
-面对这一问题，原方案为**扩容专线**，但整体**成本过高**，需寻找更优方案。
+#### **Project Background**  
+A company specializing in **enterprise leased line access** faced **resource constraints** and **network instability during peak hours**. The initial solution was **leased line expansion**, but the costs were too high, requiring a more efficient alternative.
 
-#### **解决方案**  
-采用 **Panabit 网关** 透明接入至 **内网核心交换机 & 出口交换机** 之间，**监测 2 天流量**后，将用户**感知体验较小的娱乐应用**调度至 **移动链路**，以降低原有**专线负载**，提升用户体验。
+#### **Solution**  
+The **Panabit Gateway** was deployed transparently between the **core switch & outbound switch**. After **monitoring traffic for 2 days**, entertainment applications with **minimal impact on user experience** were redirected to **mobile network links**, reducing leased line congestion and improving overall performance.
 
-#### **分流成果**  
-📈 **分流效果显著**：
-- **40%** 总流量被成功分流  
-- **用户体验无明显变化**
+#### **Traffic Splitting Results**  
+📈 **Significant Traffic Offloading**:
+- **40%** of total traffic successfully offloaded  
+- **No noticeable impact on user experience**
 
-📌 **带宽利用率提升**：
-- 原电信专线总带宽 **500M**
-- 设备接入后高峰期 **600M+**
-- **提升专线使用率 & 改善用户体验**
+📌 **Increased Bandwidth Utilization**:
+- Original telecom leased line: **500M**
+- Post-implementation peak: **600M+**
+- **Optimized bandwidth usage & enhanced user experience**
 
-📌 **流量趋势变化**：
-- **下行流量高峰期分流 200M**
-- **上行流量高峰期分流 100M**
-- **节省 40% 以上的带宽压力**
+📌 **Traffic Trend Changes**:
+- **200M offloaded during peak download periods**
+- **100M offloaded during peak upload periods**
+- **Over 40% reduction in bandwidth pressure**
 
-📊 **总流量上下行趋势**：  
-![总流量趋势](assets/total_traffic.png)
+📊 **Overall Traffic Trends**:  
+![Total Traffic](assets/total_traffic.png)
 
-📊 **分流链路下行流量趋势**：  
-![下行趋势](assets/downstream.png)
+📊 **Downstream Offloaded Traffic Trends**:  
+![Downstream Traffic](assets/downstream.png)
 
-📊 **分流链路上行流量趋势**：  
-![上行趋势](assets/upstream.png)
-
----
-
-## ⚙️ **基本配置**  
-<a id="基本配置"></a>
-
-### **🔹 分流策略**  
-📌 **路径**： `【网络设置】->【路由/NAT】`  
-📌 **步骤**：
-1. 添加策略，填写序号  
-2. 选择分流协议（如**网络游戏**）  
-3. 选择 NAT 线路  
-4. 点击 **确认**，完成部署
-
-📌 **示例截图**：  
-![NAT 配置](assets/nat_config.png)
+📊 **Upstream Offloaded Traffic Trends**:  
+![Upstream Traffic](assets/upstream.png)
 
 ---
 
-### **🔹 自定义协议（以网易协议为例）**  
-<a id="自定义协议"></a>
+## ⚙️ **Basic Configuration**  
+<a id="basic-configuration"></a>
 
-📌 **路径**：  
-- `【应用识别】 -> 【自定义协议名称】 -> 【域名关联】`  
-- 添加 **域名 & 端口**，选择所属协议
+### **🔹 Traffic Splitting Strategy**  
+📌 **Path**: `【Network 】->【Routing/NAT】`   
+📌 **Steps**:
+1. Add a new policy and assign a priority
+2. Select the traffic type (e.g., **Game**)
+3. Choose the NAT link
+4. Click **Confirm** to deploy
 
-📌 **步骤一**：  
-![自定义协议](assets/custom_protocol_step1.png)  
-![域名关联](assets/custom_protocol_step2.png)
-
-📌 **步骤二**：  
-- 进入 `【网络设置】 -> 【路由/NAT】`  
-- 选择 **自定义协议**，并选择 NAT **特权线路**  
-- **点击确认**，完成部署
-
-📌 **示例截图**：  
-![NAT 配置](assets/custom_protocol_step3.png)
+📌 **Example Screenshot**:  
+![NAT Configuration](assets/nat_config_EN.png)
 
 ---
 
-# 📞 **联系我们**  
-<a id="联系我们"></a>
-🔗 访问官网：[www.panabit.com](https://www.panabit.com/)  
-🔗 访问论坛：[bbs.panabit.com](https://bbs.panabit.com/)  
+### **🔹 Custom Protocol (Example: NetEase Protocol)**  
+<a id="custom-protocol"></a>
 
-📧 技术支持邮箱：support@panabit.com
+📌 **Path**:  
+- `【DPI】 -> 【Custom App】 -> 【App URL】`
+- Add **domain & port**, assign protocol category
 
-📞 联系我们，获取更详细的解决方案！
+📌 **Step 1**:  
+![Custom Protocol](assets/custom_protocol_step1_EN.png)  
+![Domain Association](assets/custom_protocol_step2_EN.png)
+
+📌 **Step 2**:  
+- **Path**:  
+-  `【Network 】 -> 【Routing/NAT】`
+- Select **Custom Protocol**, assign NAT **priority link**
+- **Click Confirm** to deploy
+
+📌 **Example Screenshot**:  
+![NAT Configuration](assets/custom_protocol_step3_EN.png)
+
+---
+
+# 📞 **Contact Us**  
+<a id="contact-us"></a>
+🔗 Official Website: [www.panabit.com](https://www.panabit.com/)  
+🔗 Forum: [bbs.panabit.com](https://bbs.panabit.com/)  
+📧 Support Email: support@panabit.com  
+
+📞 Contact us for more details and tailored solutions!
+
+
