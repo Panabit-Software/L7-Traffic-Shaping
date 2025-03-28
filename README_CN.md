@@ -63,11 +63,11 @@
 - Panabit 支持 DPI、DFI、节点跟踪、主动探测、加密分析等多种技术，对已经采用加密
 技术的 P2P 类应用比如 BT、迅雷、Skype、eDonkey、PPFilm、百度影音等精确识别。
 
-![引擎参数](assets/xxx.png)
+![引擎参数](assets/Connect_info.png)
 - Panabit 的 DPI 系统还具备特定封装类型的数据流量识别能力，比如 PPPOE、L2TP 流量
 的识别。不仅如此，还支持对 MPLS、RSVP、IGRP、BGP、ICMP、OSPF 等协议的识别。
 
-![应用协议](assets/xxx.png)
+![应用协议](assets/Application_Protocols.png)
 
 ### 🎯 **多样的链路接入方式**  
 支持超过 **2000+ 条线路接入**，包括：
