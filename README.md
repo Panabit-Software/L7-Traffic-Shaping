@@ -13,7 +13,7 @@
 </p>
 
 ---
-# L7 Traffic Shaping Solution  
+# L7 Traffic Shaping Solutions  
 
 ## 📌 Table of Contents
 1. [🌐 Background](#background)
