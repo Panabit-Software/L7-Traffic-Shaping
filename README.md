@@ -14,12 +14,12 @@
 
 # 📌 Table of Contents
 1. [🌐 Background](#background)
-2. [🔥 Challenges of Traditional Traffic Splitting](#challenges-of-traditional-traffic-splitting)
-3. [🚀 New Traffic Splitting: Flexible, Intelligent, Efficient](#new-traffic-splitting-flexible-intelligent-efficient)
+2. [🔥 Challenges of Traditional Traffic Shaping](#challenges-of-traditional-traffic-shaping)
+3. [🚀 New Traffic Shaping: Flexible, Intelligent, Efficient](#new-traffic-shaping-flexible-intelligent-efficient)
 4. [📌 Typical Case Studies](#typical-case-studies)
-   - [Network Traffic Splitting Case](#network-traffic-splitting-case)
+   - [Network Traffic Shaping Case](#network-traffic-shaping-case)
 5. [⚙️ Basic Configuration](#basic-configuration)
-   - [NAT Traffic Splitting Strategy](#nat-traffic-splitting-strategy)
+   - [NAT Traffic Shaping Strategy](#nat-traffic-shaping-strategy)
    - [Custom Protocol](#custom-protocol)
 6. [📞 Contact Us](#contact-us)
 
@@ -31,8 +31,8 @@ In traditional network architecture, traffic shaping typically relies on **stati
 
 ---
 
-## 🔥 **Challenges of Traditional Traffic Splitting**  
-<a id="challenges-of-traditional-traffic-splitting"></a>
+## 🔥 **Challenges of Traditional Traffic Shaping**  
+<a id="challenges-of-traditional-traffic-shaping"></a>
 
 ### 🔹 **Lack of Flexibility for Dynamic Business Needs**  
 - Relies on fixed rules (IP, port, protocol) and cannot adapt to **IP changes, business expansion, or traffic surges**.  
@@ -44,12 +44,12 @@ In traditional network architecture, traffic shaping typically relies on **stati
 
 ---
 
-## 🚀 **New Traffic Splitting: Flexible, Intelligent, Efficient**  
-<a id="new-traffic-splitting-flexible-intelligent-efficient"></a>
+## 🚀 **New Traffic Shaping: Flexible, Intelligent, Efficient**  
+<a id="new-traffic-shaping-flexible-intelligent-efficient"></a>
 
 New traffic splitting methods use **application-based intelligent scheduling**, redirecting **non-essential entertainment applications** to standard network links without user perception, offering a more flexible approach than traditional methods.
 
-### 🎯 **Diverse Traffic Splitting Methods**  
+### 🎯 **Diverse Traffic Shaping Methods**  
 Supports multiple matching approaches:  
 - **Five-tuple** (Source IP, Destination IP, Source Port, Destination Port, Protocol)  
 - **Application Protocols** (e.g., HTTP, HTTPS, DNS)  
@@ -77,8 +77,8 @@ Supports up to:
 ## 📌 **Typical Case Studies**  
 <a id="typical-case-studies"></a>
 
-### **📌 Network Traffic Splitting Case**  
-<a id="network-traffic-splitting-case"></a>
+### **📌 Network Traffic Shaping Case**  
+<a id="network-traffic-shaping-case"></a>
 
 #### **Project Background**  
 A company specializing in **enterprise leased line access** faced **resource constraints** and **network instability during peak hours**. The initial solution was **leased line expansion**, but the costs were too high, requiring a more efficient alternative.
@@ -86,7 +86,7 @@ A company specializing in **enterprise leased line access** faced **resource con
 #### **Solution**  
 The **Panabit Gateway** was deployed transparently between the **core switch & outbound switch**. After **monitoring traffic for 2 days**, entertainment applications with **minimal impact on user experience** were redirected to **mobile network links**, reducing leased line congestion and improving overall performance.
 
-#### **Traffic Splitting Results**  
+#### **Traffic Shaping Results**  
 📈 **Significant Traffic Offloading**:
 - **40%** of total traffic successfully offloaded  
 - **No noticeable impact on user experience**
@@ -115,7 +115,7 @@ The **Panabit Gateway** was deployed transparently between the **core switch & o
 ## ⚙️ **Basic Configuration**  
 <a id="basic-configuration"></a>
 
-### **🔹 Traffic Splitting Strategy**  
+### **🔹 Traffic Shaping Strategy**  
 📌 **Path**: `【Network 】->【Routing/NAT】`   
 📌 **Steps**:
 1. Add a new policy and assign a priority
