@@ -58,7 +58,7 @@ Supports hybrid criteria:
 
 - Panabit possesses robust traffic identification capabilities. Its DPI system supports **five-tuple analysis** (source IP, destination IP, source port, destination port, protocol type), and can query the **ISP attribution** and **geographical location** of destination IPs. Additionally, it displays access timestamps and domain resolution capabilities.  
 
-![Connection Info](assets/xxx_EN.png)  
+![Connection Info](assets/data_EN.png)  
 
 - Panabit integrates multiple technologies including **DPI**, **DFI**, node tracking, active probing, and encrypted traffic analysis to precisely identify encrypted P2P applications such as BT, Xunlei, Skype, eDonkey, PPFilm, and Baidu Player.  
 
