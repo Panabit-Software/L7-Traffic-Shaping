@@ -13,8 +13,9 @@
 </p>
 
 ---
+# L7 Traffic Shaping Solution  
 
-# 📌 Table of Contents
+## 📌 Table of Contents
 1. [🌐 Background](#background)
 2. [🔥 Challenges of Traditional Traffic Shaping](#challenges)
 3. [🚀 Next-Gen Traffic Shaping: Flexible, Intelligent & Efficient](#next-gen-shaping)
