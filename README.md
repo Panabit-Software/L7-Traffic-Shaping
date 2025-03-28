@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+
 <h1 align="center">
   <img src="assets/Panabit.png" alt="Panabit" width="240" height="72">
   
@@ -15,8 +16,8 @@
 
 # 📌 Table of Contents
 1. [🌐 Background](#background)
-2. [🔥 Challenges of Traditional Traffic Shaping](#challenges-of-traffic-shaping)
-3. [🚀 Next-Gen Traffic Shaping: Flexible, Intelligent & Efficient](#next-gen-traffic-shaping)
+2. [🔥 Challenges of Traditional Traffic Shaping](#challenges)
+3. [🚀 Next-Gen Traffic Shaping: Flexible, Intelligent & Efficient](#next-gen-shaping)
 4. [📌 Case Studies](#case-studies)
 5. [⚙️ Basic Configuration](#configuration)
 6. [📞 Contact Us](#contact)
@@ -25,45 +26,58 @@
 
 # 🌐 **Background**  
 <a id="background"></a>
-In traditional network architectures, traffic shaping typically relies on **static rules** (IP addresses, port numbers, protocol types). While effective in stable environments, these methods face limitations in dynamic networks due to **inflexibility** and **inability to adapt to changing requirements**[2,5](@ref).
+In traditional network architectures, traffic shaping typically relies on **static rules** (IP addresses, port numbers, protocol types). While effective in stable environments, these methods face limitations in dynamic networks due to **inflexibility** and **inability to adapt to evolving requirements**.
 
 ---
 
 ## 🔥 **Challenges of Traditional Traffic Shaping**  
-<a id="challenges-of-traffic-shaping"></a>
+<a id="challenges"></a>
 
-### 🔹 **Rigid Architecture**  
-- Requires manual updates for IP changes/business expansions  
-- High operational costs for rule maintenance[2](@ref)
+### 🔹 **Inflexibility in Dynamic Environments**  
+- Reliance on fixed rules (IP/Port/Protocol) cannot handle **IP changes, business expansion, or traffic spikes**  
+- Manual rule updates result in **high operational costs** and delayed adjustments
 
-### 🔹 **Limited Visibility & Control**  
-- Cannot identify encrypted traffic or dynamic ports  
-- Lacks real-time adjustment based on network status (latency, bandwidth, load)[5](@ref)
+### 🔹 **Limited Traffic Intelligence**  
+- Fails to identify **encrypted traffic, dynamic ports, or application-layer protocols**  
+- Lacks real-time optimization based on network status (**bandwidth, latency, load**), compromising **QoS assurance**[6](@ref)
 
 ---
 
-## 🚀 **Next-Gen Traffic Shaping**  
-<a id="next-gen-traffic-shaping"></a>
-Our solution enables application-aware traffic management, automatically diverting non-critical applications (e.g., entertainment) to standard lines while maintaining QoS for business-critical traffic[1,6](@ref).
+## 🚀 **Next-Gen Traffic Shaping: Flexible, Intelligent & Efficient**  
+<a id="next-gen-shaping"></a>
+Our application-aware traffic management automatically diverts non-critical applications (e.g., entertainment) to standard lines while maintaining QoS for business-critical traffic.
+### 🎯 **Multi-Dimensional Traffic Matching**  
+Supports hybrid criteria:
+- **Five-tuple** (Source/Dest IP/Port, Protocol)
+- **Application Protocols** (HTTP/HTTPS/DNS)
+- **Domain Patterns** (e.g., `*.tiktok.com`)
+- **VLAN/User Types/Network Interfaces**
+  
+### 🎯 **Precision Application Recognition**  
 
-### 🎯 **Multi-Dimensional Matching**  
-Supports hybrid matching criteria:
-- **Five-tuple** (Source/Destination IP/Port, Protocol)  
-- **Application Protocols** (HTTP/HTTPS/DNS)  
-- **Domain Patterns** (e.g., `*.tiktok.com`)  
-- **VLAN/User Types**[2,6](@ref)
+- Panabit possesses robust traffic identification capabilities. Its DPI system supports **five-tuple analysis** (source IP, destination IP, source port, destination port, protocol type), and can query the **ISP attribution** and **geographical location** of destination IPs. Additionally, it displays access timestamps and domain resolution capabilities.  
 
-### 🎯 **Precision Identification**  
-- **2000+ application protocols** recognition including encrypted P2P/BT/Xunlei  
-- Supports MPLS, RSVP, IGRP, BGP, and ICMP analysis[2,5](@ref)  
-- Geolocation & ISP attribution for destination IPs  
+![Connection Info](assets/xxx_EN.png)  
 
-![Connection Information](assets/Connect_info_EN.png)
+- Panabit integrates multiple technologies including **DPI**, **DFI**, node tracking, active probing, and encrypted traffic analysis to precisely identify encrypted P2P applications such as BT, Xunlei, Skype, eDonkey, PPFilm, and Baidu Player.  
+
+![Engine Parameters](assets/Connect_info_EN.png)  
+
+- The DPI system also recognizes specific encapsulation types like **PPPoE** and **L2TP**, and supports protocol identification for **MPLS**, **RSVP**, **IGRP**, **BGP**, **ICMP**, and **OSPF**.  
+
+![Application Protocols](assets/Application_Protocols_EN.png)  
 
 ### 🎯 **Hybrid Access Modes**  
-- **DHCP/Static IP/PPPoE/L2TP** support  
-- **100G throughput** with 18M concurrent connections[2,5](@ref)  
+Supports **2000+ access lines** including:  
+- **DHCP/Static IP**  
+- **PPPoE Dial-up**  
+- **L2TP**
 
+### 🎯 **High-Performance Forwarding**  
+Capable of:  
+- **100Gbps throughput**  
+- **18M concurrent connections**  
+- **Full-scenario access** for seamless traffic management
 ---
 
 ## 📌 **Case Studies**  
@@ -74,17 +88,25 @@ Supports hybrid matching criteria:
 A government service provider faced **500M bandwidth congestion** during peak hours with unstable connectivity.
 
 #### **Solution**  
-Deployed Panabit gateway between core and edge switches, implementing:  
+Deployed Panabit gateway between core/edge switches, implementing:  
 - **40% traffic diversion** to mobile networks  
-- Application-based QoS prioritization[1,6](@ref)
+- Application-based QoS prioritization
 
 #### **Results**  
-📈 **Performance Improvements**:
+📈 **Performance Improvements**:  
 - 200M downstream & 100M upstream traffic shifted  
 - 40% bandwidth pressure reduction  
-- Zero perceptible user experience impact  
+- Zero perceptible user impact
+- 
+📊 **Total Traffic Trends**:  
+![Total Traffic Trends](assets/total_traffic.png)
 
-![Total Traffic Trends](assets/total_traffic_EN.png)
+📊 **Downstream Traffic Trends of Diversion Link**:  
+![Downstream Trends](assets/downstream.png)
+
+📊 **Upstream Traffic Trends of Diversion Link**: 
+
+![Upstream Trends](assets/upstream.png)
 
 ---
 
@@ -92,21 +114,34 @@ Deployed Panabit gateway between core and edge switches, implementing:
 <a id="configuration"></a>
 
 ### 🔹 **Traffic Shaping Policy**  
-**Path**: `Network Settings > Routing/NAT`  
+**Path**: `Network  > Routing/NAT`  
 **Steps**:
 1. Create policy with unique ID  
 2. Select target protocols (e.g., online games)  
 3. Designate NAT line  
-4. Deploy configuration[3,6](@ref)
+4. Deploy configuration  
 
-![NAT Configuration](assets/nat_config_EN.png)
+![NAT Config](assets/nat_config_EN.png)
 
-### 🔹 **Custom Protocol Setup**  
-**Path**: `Application Recognition > Custom Protocols`  
-- Define domain/port associations  
-- Assign to protocol groups[3,6](@ref)
+### 🔹 **Custom Protocol (Example: NetEase Protocol)**  
+<a id="custom-protocol"></a>
 
-![Custom Protocol Setup](assets/custom_protocol_step1_EN.png)
+📌 **Navigation Path**:  
+- `[Application Recognition] -> [Custom Protocol Name] -> [Domain Association]`  
+- Add **Domain & Port** and assign protocol category  
+
+📌 **Step 1**:  
+![Custom Protocol](assets/custom_protocol_step1_EN.png)  
+![Domain Association](assets/custom_protocol_step2_EN.png)  
+
+📌 **Step 2**:  
+- Navigate to `[Network Settings] -> [Routing/NAT]`  
+- Select **Custom Protocol** and assign **Priority NAT Line**  
+- Click **Confirm** to deploy  
+
+📌 **Configuration Example**:  
+
+![NAT Configuration](assets/custom_protocol_step3_EN.png)  
 
 ---
 
@@ -114,6 +149,7 @@ Deployed Panabit gateway between core and edge switches, implementing:
 <a id="contact"></a>
 🔗 Official Website: [www.panabit.com](https://www.panabit.com/)  
 🔗 Technical Forum: [bbs.panabit.com](https://bbs.panabit.com/)  
-📧 Support: support@panabit.com  
 
-📞 Contact our solutions team for customized enterprise deployments!
+📧 Technical Support: support@panabit.com  
+
+📞 Contact us for enterprise solutions!
