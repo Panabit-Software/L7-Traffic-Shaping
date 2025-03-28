@@ -58,12 +58,15 @@
 
 ### 🎯 **精准的应用识别**  
 - Panabit 具有丰富的业务数据流量识别能力。Panabit 的 DPI 系统不仅具备 IP 五元组识别能力，包括源 IP 地址，目的 IP 地址，源端口号、目的端口号和协议类型，还具备目的 IP 的运营商归属和地理位置查询能力。同时，它还能显示访问时间、域名的查询能力。
+
 ![连接信息](assets/xxx.png)
 - Panabit 支持 DPI、DFI、节点跟踪、主动探测、加密分析等多种技术，对已经采用加密
 技术的 P2P 类应用比如 BT、迅雷、Skype、eDonkey、PPFilm、百度影音等精确识别。
+
 ![引擎参数](assets/xxx.png)
 - Panabit 的 DPI 系统还具备特定封装类型的数据流量识别能力，比如 PPPOE、L2TP 流量
 的识别。不仅如此，还支持对 MPLS、RSVP、IGRP、BGP、ICMP、OSPF 等协议的识别。
+
 ![应用协议](assets/xxx.png)
 
 ### 🎯 **多样的链路接入方式**  
