@@ -1,159 +1,120 @@
 <a name="readme-top"></a>
 <h1 align="center">
   <img src="assets/Panabit.png" alt="Panabit" width="240" height="72">
-  <br>
+  
+
   Panabit Intelligent Application Gateway
 </h1>
-
+<h4 align="center">Integrated Intelligent Gateway for Network Egress</h4>
 
 <p align="center">
-  <a href="README_CN.md" style="color: #007bff; text-decoration: none; font-weight: bold;">中文</a> | <span style="color: #007bff; font-weight: bold;">English</span>
+  <a href="README.md" style="color: #007bff; text-decoration: none; font-weight: bold;">English</a> | <span style="color: #007bff; font-weight: bold;">中文</span>
 </p>
 
 ---
 
 # 📌 Table of Contents
 1. [🌐 Background](#background)
-2. [🔥 Challenges of Traditional Traffic Shaping](#challenges-of-traditional-traffic-shaping)
-3. [🚀 New Traffic Shaping: Flexible, Intelligent, Efficient](#new-traffic-shaping-flexible-intelligent-efficient)
-4. [📌 Typical Case Studies](#typical-case-studies)
-5. [⚙️ Basic Configuration](#basic-configuration)
-6. [📞 Contact Us](#contact-us)
+2. [🔥 Challenges of Traditional Traffic Shaping](#challenges-of-traffic-shaping)
+3. [🚀 Next-Gen Traffic Shaping: Flexible, Intelligent & Efficient](#next-gen-traffic-shaping)
+4. [📌 Case Studies](#case-studies)
+5. [⚙️ Basic Configuration](#configuration)
+6. [📞 Contact Us](#contact)
 
 ---
 
 # 🌐 **Background**  
 <a id="background"></a>
-In traditional network architecture, traffic shaping typically relies on **static rules**, such as predefined policies based on **IP addresses, port numbers, and protocol types**. While effective in fixed environments, these static rules lack flexibility and adaptability, leading to various issues as business needs evolve and network environments become more complex.
+In traditional network architectures, traffic shaping typically relies on **static rules** (IP addresses, port numbers, protocol types). While effective in stable environments, these methods face limitations in dynamic networks due to **inflexibility** and **inability to adapt to changing requirements**[2,5](@ref).
 
 ---
 
 ## 🔥 **Challenges of Traditional Traffic Shaping**  
-<a id="challenges-of-traditional-traffic-shaping"></a>
+<a id="challenges-of-traffic-shaping"></a>
 
-### 🔹 **Lack of Flexibility for Dynamic Business Needs**  
-- Relies on fixed rules (IP, port, protocol) and cannot adapt to **IP changes, business expansion, or traffic surges**.  
-- Manual rule updates lead to **high operational costs** and make real-time adjustments difficult.
+### 🔹 **Rigid Architecture**  
+- Requires manual updates for IP changes/business expansions  
+- High operational costs for rule maintenance[2](@ref)
 
-### 🔹 **Limited Traffic Identification and Lack of Intelligent Scheduling**  
-- Cannot recognize **encrypted traffic, dynamic ports, or application-layer protocols**, causing rule failures.  
-- Lacks real-time traffic optimization based on **bandwidth, latency, and load**, impacting **QoS assurance**.
-
----
-
-## 🚀 **New Traffic Shaping: Flexible, Intelligent, Efficient**  
-<a id="new-traffic-shaping-flexible-intelligent-efficient"></a>
-
-New traffic splitting methods use **application-based intelligent scheduling**, redirecting **non-essential entertainment applications** to standard network links without user perception, offering a more flexible approach than traditional methods.
-
-### 🎯 **Diverse Traffic Shaping Methods**  
-Supports multiple matching approaches:  
-- **Five-tuple** (Source IP, Destination IP, Source Port, Destination Port, Protocol)  
-- **Application Protocols** (e.g., HTTP, HTTPS, DNS)  
-- **Domain Matching** (e.g., `*.tiktok.com`, `*.netflix.com`)  
-- **VLAN, Network Interfaces, User Types**, etc.
-
-### 🎯 **Accurate Application Identification**  
-- Achieves **95%+ recognition accuracy**, identifying and managing **14 major categories and thousands of applications** for precise traffic splitting.
-
-### 🎯 **Diverse Link Access Methods**  
-Supports over **2000+ link types**, including:
-- **DHCP**
-- **Static IP**
-- **PPPoE Dial-Up**
-- **L2TP**
-
-### 🎯 **High-Performance Forwarding Capabilities**  
-Supports up to:
-- **100G throughput**
-- **18 million concurrent connections**
-- **Full-scale access**, ensuring efficient traffic splitting.
+### 🔹 **Limited Visibility & Control**  
+- Cannot identify encrypted traffic or dynamic ports  
+- Lacks real-time adjustment based on network status (latency, bandwidth, load)[5](@ref)
 
 ---
 
-## 📌 **Typical Case Studies**  
-<a id="typical-case-studies"></a>
+## 🚀 **Next-Gen Traffic Shaping**  
+<a id="next-gen-traffic-shaping"></a>
+Our solution enables application-aware traffic management, automatically diverting non-critical applications (e.g., entertainment) to standard lines while maintaining QoS for business-critical traffic[1,6](@ref).
 
-### **📌 Network Traffic Shaping Case**  
-<a id="network-traffic-shaping-case"></a>
+### 🎯 **Multi-Dimensional Matching**  
+Supports hybrid matching criteria:
+- **Five-tuple** (Source/Destination IP/Port, Protocol)  
+- **Application Protocols** (HTTP/HTTPS/DNS)  
+- **Domain Patterns** (e.g., `*.tiktok.com`)  
+- **VLAN/User Types**[2,6](@ref)
 
-#### **Project Background**  
-A company specializing in **enterprise leased line access** faced **resource constraints** and **network instability during peak hours**. The initial solution was **leased line expansion**, but the costs were too high, requiring a more efficient alternative.
+### 🎯 **Precision Identification**  
+- **2000+ application protocols** recognition including encrypted P2P/BT/Xunlei  
+- Supports MPLS, RSVP, IGRP, BGP, and ICMP analysis[2,5](@ref)  
+- Geolocation & ISP attribution for destination IPs  
+
+![Connection Information](assets/Connect_info.png)
+
+### 🎯 **Hybrid Access Modes**  
+- **DHCP/Static IP/PPPoE/L2TP** support  
+- **100G throughput** with 18M concurrent connections[2,5](@ref)  
+
+---
+
+## 📌 **Case Studies**  
+<a id="case-studies"></a>
+
+### **Enterprise Network Optimization**  
+#### **Challenge**  
+A government service provider faced **500M bandwidth congestion** during peak hours with unstable connectivity.
 
 #### **Solution**  
-The **Panabit Gateway** was deployed transparently between the **core switch & outbound switch**. After **monitoring traffic for 2 days**, entertainment applications with **minimal impact on user experience** were redirected to **mobile network links**, reducing leased line congestion and improving overall performance.
+Deployed Panabit gateway between core and edge switches, implementing:  
+- **40% traffic diversion** to mobile networks  
+- Application-based QoS prioritization[1,6](@ref)
 
-#### **Traffic Shaping Results**  
-📈 **Significant Traffic Offloading**:
-- **40%** of total traffic successfully offloaded  
-- **No noticeable impact on user experience**
+#### **Results**  
+📈 **Performance Improvements**:
+- 200M downstream & 100M upstream traffic shifted  
+- 40% bandwidth pressure reduction  
+- Zero perceptible user experience impact  
 
-📌 **Increased Bandwidth Utilization**:
-- Original telecom leased line: **500M**
-- Post-implementation peak: **600M+**
-- **Optimized bandwidth usage & enhanced user experience**
-
-📌 **Traffic Trend Changes**:
-- **200M offloaded during peak download periods**
-- **100M offloaded during peak upload periods**
-- **Over 40% reduction in bandwidth pressure**
-
-📊 **Overall Traffic Trends**:  
-![Total Traffic](assets/total_traffic.png)
-
-📊 **Downstream Offloaded Traffic Trends**:  
-![Downstream Traffic](assets/downstream.png)
-
-📊 **Upstream Offloaded Traffic Trends**:  
-![Upstream Traffic](assets/upstream.png)
+![Total Traffic Trends](assets/total_traffic.png)
 
 ---
 
 ## ⚙️ **Basic Configuration**  
-<a id="basic-configuration"></a>
+<a id="configuration"></a>
 
-### **🔹 Traffic Shaping Strategy**  
+### 🔹 **Traffic Shaping Policy**  
+**Path**: `Network Settings > Routing/NAT`  
+**Steps**:
+1. Create policy with unique ID  
+2. Select target protocols (e.g., online games)  
+3. Designate NAT line  
+4. Deploy configuration[3,6](@ref)
 
-📌 **Path**: `【Network 】->【Routing/NAT】`   
-📌 **Steps**:
-1. Add a new policy and assign a priority
-2. Select the traffic type (e.g., **Game**)
-3. Choose the NAT link
-4. Click **Confirm** to deploy
+![NAT Configuration](assets/nat_config.png)
 
-📌 **Example Screenshot**:  
-![NAT Configuration](assets/nat_config_EN.png)
+### 🔹 **Custom Protocol Setup**  
+**Path**: `Application Recognition > Custom Protocols`  
+- Define domain/port associations  
+- Assign to protocol groups[3,6](@ref)
 
----
-
-### **🔹 Custom Protocol (Example: NetEase Protocol)**  
-<a id="custom-protocol"></a>
-
-📌 **Path**:  
-- `【DPI】 -> 【Custom App】 -> 【App URL】`
-- Add **domain & port**, assign protocol category
-
-📌 **Step 1**:  
-![Custom Protocol](assets/custom_protocol_step1_EN.png)  
-![Domain Association](assets/custom_protocol_step2_EN.png)
-
-📌 **Step 2**:  
-- **Path**:  
--  `【Network 】 -> 【Routing/NAT】`
-- Select **Custom Protocol**, assign NAT **priority link**
-- **Click Confirm** to deploy
-
-📌 **Example Screenshot**:  
-![NAT Configuration](assets/custom_protocol_step3_EN.png)
+![Custom Protocol Setup](assets/custom_protocol_step1.png)
 
 ---
 
 # 📞 **Contact Us**  
-<a id="contact-us"></a>
+<a id="contact"></a>
 🔗 Official Website: [www.panabit.com](https://www.panabit.com/)  
-🔗 Forum: [bbs.panabit.com](https://bbs.panabit.com/)  
-📧 Support Email: support@panabit.com  
+🔗 Technical Forum: [bbs.panabit.com](https://bbs.panabit.com/)  
 
-📞 Contact us for more details and tailored solutions!
+📧 Support: support@panabit.com  
 
-
+📞 Contact our solutions team for customized enterprise deployments!
