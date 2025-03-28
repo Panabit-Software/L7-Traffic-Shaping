@@ -27,7 +27,7 @@
 
 # 🌐 **Background**  
 <a id="background"></a>
-In traditional network architecture, traffic splitting typically relies on **static rules**, such as predefined policies based on **IP addresses, port numbers, and protocol types**. While effective in fixed environments, these static rules lack flexibility and adaptability, leading to various issues as business needs evolve and network environments become more complex.
+In traditional network architecture, traffic shaping typically relies on **static rules**, such as predefined policies based on **IP addresses, port numbers, and protocol types**. While effective in fixed environments, these static rules lack flexibility and adaptability, leading to various issues as business needs evolve and network environments become more complex.
 
 ---
 
