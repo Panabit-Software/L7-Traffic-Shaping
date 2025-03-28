@@ -58,7 +58,7 @@ Supports hybrid matching criteria:
 - Supports MPLS, RSVP, IGRP, BGP, and ICMP analysis[2,5](@ref)  
 - Geolocation & ISP attribution for destination IPs  
 
-![Connection Information](assets/Connect_info.png)
+![Connection Information](assets/Connect_info_EN.png)
 
 ### 🎯 **Hybrid Access Modes**  
 - **DHCP/Static IP/PPPoE/L2TP** support  
@@ -84,7 +84,7 @@ Deployed Panabit gateway between core and edge switches, implementing:
 - 40% bandwidth pressure reduction  
 - Zero perceptible user experience impact  
 
-![Total Traffic Trends](assets/total_traffic.png)
+![Total Traffic Trends](assets/total_traffic_EN.png)
 
 ---
 
@@ -99,14 +99,14 @@ Deployed Panabit gateway between core and edge switches, implementing:
 3. Designate NAT line  
 4. Deploy configuration[3,6](@ref)
 
-![NAT Configuration](assets/nat_config.png)
+![NAT Configuration](assets/nat_config_EN.png)
 
 ### 🔹 **Custom Protocol Setup**  
 **Path**: `Application Recognition > Custom Protocols`  
 - Define domain/port associations  
 - Assign to protocol groups[3,6](@ref)
 
-![Custom Protocol Setup](assets/custom_protocol_step1.png)
+![Custom Protocol Setup](assets/custom_protocol_step1_EN.png)
 
 ---
 
@@ -114,7 +114,6 @@ Deployed Panabit gateway between core and edge switches, implementing:
 <a id="contact"></a>
 🔗 Official Website: [www.panabit.com](https://www.panabit.com/)  
 🔗 Technical Forum: [bbs.panabit.com](https://bbs.panabit.com/)  
-
 📧 Support: support@panabit.com  
 
 📞 Contact our solutions team for customized enterprise deployments!
