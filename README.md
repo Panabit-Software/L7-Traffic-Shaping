@@ -61,7 +61,7 @@ Supports hybrid criteria:
 
 - Panabit integrates multiple technologies including **DPI**, **DFI**, node tracking, active probing, and encrypted traffic analysis to precisely identify encrypted P2P applications such as BT, Xunlei, Skype, eDonkey, PPFilm, and Baidu Player.  
 
-![Engine Parameters](assets/Connect_info_EN.png)  
+![Engine Parameters](assets/Connection_info_EN.png)  
 
 - The DPI system also recognizes specific encapsulation types like **PPPoE** and **L2TP**, and supports protocol identification for **MPLS**, **RSVP**, **IGRP**, **BGP**, **ICMP**, and **OSPF**.  
 
