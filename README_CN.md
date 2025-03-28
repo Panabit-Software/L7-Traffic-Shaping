@@ -116,7 +116,7 @@
 
 
 
-![连接信息](assets/xxx.png)
+![连接信息](assets/data.png)
 
 - Panabit 支持 DPI、DFI、节点跟踪、主动探测、加密分析等多种技术，对已经采用加密
 
