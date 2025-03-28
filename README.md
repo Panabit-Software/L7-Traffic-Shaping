@@ -17,10 +17,7 @@
 2. [🔥 Challenges of Traditional Traffic Shaping](#challenges-of-traditional-traffic-shaping)
 3. [🚀 New Traffic Shaping: Flexible, Intelligent, Efficient](#new-traffic-shaping-flexible-intelligent-efficient)
 4. [📌 Typical Case Studies](#typical-case-studies)
-   - [Network Traffic Shaping Case](#network-traffic-shaping-case)
 5. [⚙️ Basic Configuration](#basic-configuration)
-   - [NAT Traffic Shaping Strategy](#nat-traffic-shaping-strategy)
-   - [Custom Protocol](#custom-protocol)
 6. [📞 Contact Us](#contact-us)
 
 ---
@@ -116,6 +113,7 @@ The **Panabit Gateway** was deployed transparently between the **core switch & o
 <a id="basic-configuration"></a>
 
 ### **🔹 Traffic Shaping Strategy**  
+
 📌 **Path**: `【Network 】->【Routing/NAT】`   
 📌 **Steps**:
 1. Add a new policy and assign a priority
