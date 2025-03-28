@@ -39,7 +39,7 @@ In traditional network architectures, traffic shaping typically relies on **stat
 
 ### 🔹 **Limited Traffic Intelligence**  
 - Fails to identify **encrypted traffic, dynamic ports, or application-layer protocols**  
-- Lacks real-time optimization based on network status (**bandwidth, latency, load**), compromising **QoS assurance**[6](@ref)
+- Lacks real-time optimization based on network status (**bandwidth, latency, load**), compromising **QoS assurance**
 
 ---
 
