@@ -127,7 +127,7 @@ Deployed Panabit gateway between core/edge switches, implementing:
 <a id="custom-protocol"></a>
 
 📌 **Navigation Path**:  
-- `[Application Recognition] -> [Custom Protocol Name] -> [Domain Association]`  
+- `[DPI] -> [Custom APP] -> [Custom APP]`  
 - Add **Domain & Port** and assign protocol category  
 
 📌 **Step 1**:  
