@@ -149,7 +149,6 @@ Deployed Panabit gateway between core/edge switches, implementing:
 <a id="contact"></a>
 🔗 Official Website: [www.panabit.com](https://www.panabit.com/)  
 🔗 Technical Forum: [bbs.panabit.com](https://bbs.panabit.com/)  
-
 📧 Technical Support: support@panabit.com  
 
 📞 Contact us for enterprise solutions!
